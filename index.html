@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kings of Maths | A Kings of War Damage Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="shortcut icon" href="favicon.png" type="x-icon">
+</head>
+<body>
+  <script type="text/javascript" src="script.js"></script>
+<h1>Kings of Maths</h1>
+<h3>A Kings of War damage calculator</h3>
+<div class="section" id="numAttacksSubmitArea">Number of attacks: 
+<input type="number" id="numAttacksInput" style="width: 40px;">
+</div>
+<div id="attack">Attack value: </div>
+<div class="section" id="attackButtons">
+  <input type="button" onclick="javascript:attackButton(2)" value="2+">
+  <input type="button" onclick="javascript:attackButton(3)" value="3+">
+  <input type="button" onclick="javascript:attackButton(4)" value="4+">
+  <input type="button" onclick="javascript:attackButton(5)" value="5+">
+  <input type="button" onclick="javascript:attackButton(6)" value="6+">
+</div>
+<div id="cs">Crushing Strength/Thunderous Charge/Piercing: </div>
+<div class="section" id="csButtons">
+  <input type="button" onclick="javascript:csButton(0)" value="0">
+  <input type="button" onclick="javascript:csButton(1)" value="1">
+  <input type="button" onclick="javascript:csButton(2)" value="2">
+  <input type="button" onclick="javascript:csButton(3)" value="3">
+  <input type="button" onclick="javascript:csButton(4)" value="4">
+</div>
+<div class="section" id="checkboxes">
+  <div id="elitecheckboxcontainer">
+    <input type="checkbox" id="elitecheckbox">
+    <label for="elitecheckbox">Elite</label>
+  </div>
+  <div id="viciouscheckboxcontainer">
+    <input type="checkbox" id="viciouscheckbox">
+    <label for="viciouscheckbox">Vicious</label>
+  </div>
+</div>
+<div id="defend">Defence value: </div>
+<div class="section" id="defendButtons">
+  <input type="button" onclick="javascript:defendButton(2)" value="2+">
+  <input type="button" onclick="javascript:defendButton(3)" value="3+">
+  <input type="button" onclick="javascript:defendButton(4)" value="4+">
+  <input type="button" onclick="javascript:defendButton(5)" value="5+">
+  <input type="button" onclick="javascript:defendButton(6)" value="6+">
+</div>
+<div class="section" id="damage"></div>
+<div class="inputsection" id="calcButtonContainer">
+  <input type="button" id="calcButton" onclick="javascript:calculateDamage()" value="Calculate!">
+</div>
+</body>
+</html>

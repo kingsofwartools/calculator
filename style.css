@@ -1,0 +1,95 @@
+* {
+ font-family: Arial;
+}
+body {
+  font-size: 20px;
+  text-align: center;
+}
+div.section {
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+@media (max-width: 500px) and (min-width: 321px) {
+  #damage {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  #damage {
+    font-size: 12px;
+  }
+}
+input { 
+  font-size: 18px; 
+}
+#numAttacksSubmitArea, #attack, #cs, #checkboxes {
+  color: #d93434;
+}
+#elitecheckboxcontainer, #viciouscheckboxcontainer {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border: 3px solid #d93434;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+label {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+#defend {
+  color: #2980b9;
+}
+input[type="checkbox"] {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+input[type="button"] {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 16px 8px 16px;
+  border: 0px;
+  text-decoration: none;
+}
+@media (max-width: 320px) {
+  input[type="button"] {
+    font-size:16px;
+    padding: 4px 8px 4px 8px;
+  }
+}
+#attackButtons input[type="button"], #csButtons input[type="button"] {
+  background: #d93434;
+}
+#defendButtons input[type="button"] {
+  background: #2980b9;
+}
+#calcButton {
+  background: #27ae60;
+}
+
+#attackButtons input[type="button"]:hover, #csButtons input[type="button"]:hover {
+  background: #c70a0a;
+}
+#defendButtons input[type="button"]:hover {
+  background: #2471a3;
+}
+#calcButton:hover {
+  background: #229954;
+}
+input[type="button"]:active {
+	position:relative;
+	top:1px;
+}
+	
